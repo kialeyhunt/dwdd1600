@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <meta name="description" content="The official home of the Dragons of Zurra book series.">
+    <meta name="author" content="Kialey Hunt">
+    <meta name="viewport" content="width=device-width, initial-scale=1">    
+    <title>Dragons of Zurra: Home</title> 
+    <link rel="stylesheet" href="zurra.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya:wght@400;600&display=swap" rel="stylesheet">
+        
+    </head>
+    <body>
+        <!-- Start of the page header-->
+        <header>
+            <h1>Dragons of Zurra</h1>
+            <p><em>Fly Beyond</em></p>
+        </header>
+        
+        <!-- Start of the page navigation-->
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="author.html">About the Author</a></li>
+                <li><a href="books.html">Books</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="news.html">News/Updates</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li class ="active"><a href="review.html">Leave a Review</a></li>
+            
+            </ul>
+        </nav>
+        <!-- Start of the page content-->
+        <main>
+        <h1>LEAVE A REVIEW</h1>
+            <p>Read the books? Feel free to share about your reading experience and your thoughts on the story!</p>
+    <form method="get" class="reviewForm" action="thanks.html">
+        
+            <fieldset>
+            <legend>Reviewer Information</legend>
+                <label>First Name<input type="text" name="fname"></label>
+                <label>Last Name<input type="text" name="lname"></label>
+                <label>Age Range
+                    <select name="age">
+                        <option value="none">Please Select</option>
+                        <option value="middlegrade">8-12 years old</option>
+                        <option value="youngadult">12-18 years old</option>
+                        <option value="adult">18-25 years old</option>
+                        <option value="mature">over 25 years old</option>
+                        <option value="notsaying">Prefer not to say</option>  
+                    </select>
+                </label>
+            </fieldset>
+            
+            <fieldset>
+            <legend>Book Information</legend>
+                <label>Book Title
+                    <select name="booktitle" required>
+                        <option value="none">Please Select</option>
+                        <option value="book1">The Lost Empires: Book 1</option>
+                        <option value="other">Other</option>
+                    </select>
+                </label>
+            </fieldset>
+            
+            <fieldset>
+            <legend>Your Review</legend>
+                <label>Rating (out of five stars)</label>
+                <label><input type="checkbox" name="onestar" value="chosen">☆</label>
+                <label><input type="checkbox" name="twostars" value="chosen">☆</label>
+                <label><input type="checkbox" name="threestars" value="chosen">☆</label>
+                <label><input type="checkbox" name="fourstars" value="chosen">☆</label>
+                <label><input type="checkbox" name="fivestars" value="chosen">☆</label>
+                <label>Write Your Review
+                    <textarea name="comments" required></textarea>
+                </label>
+            </fieldset>
+            
+        <input type="submit" value="Send in Your Review!">
+        </form>
+        </main>
+        <!-- Start of the page footer-->
+        <footer>
+        <p>&copy; 2024 &bull; K.A. Hunt &bull; <a href="mailto:officialkialeyhunt@gmail.com">Email Us</a> &bull; <a href="tel:9137026142">Call Us</a></p>
+        </footer>
+        
+    </body>
+</html>
