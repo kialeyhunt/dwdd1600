@@ -1,0 +1,334 @@
+/*prevent problems w different browswers*/
+* {box-sizing: border-box;}
+
+
+body {
+    font-family: 'Alegreya', serif;
+    font-size: 16px;
+    font-weight: 400;
+    margin: 0;   
+}
+
+/* header stuff here*/
+header {
+    background-color: #ffdaba;
+    padding: 1rem 2vw; 
+    display: flex;
+    align-items: flex-end;
+}
+
+header div {
+    padding-left: 2vw;
+}
+
+header h1 {
+    margin: 0;
+    color: #a589c4;
+}
+header p {
+    margin: 0;
+    color: #a589c4;
+    letter-spacing: 2px;
+}
+
+/*nav stuff here*/
+
+/*small screens*/
+@media only screen and (max-width: 700px) {
+    nav ul {
+        margin: 0;padding: 0 2vw;
+        list-style-type: none;
+        background-color: #cb99c8;
+    }
+    
+    nav a {
+        display: block;
+        padding: .8rem;
+        text-decoration: none;
+        font-weight: 600;
+        text-align: center;
+        text-transform: uppercase;
+        border-bottom: solid 1px #aaa;
+        color: #fff2f2;
+    }
+    
+    nav .active a {
+        background-color: #fff2f2;
+        background-image: linear-gradient(to bottom, #fff2f2, #FFE0B7);
+        color: #cb99c8;
+    }
+    
+} /*end small screens*/
+
+/*BIG screens*/
+@media only screen and (min-width: 701px) {
+   nav {
+    background-color: #cb99c8;
+}
+nav ul {
+    list-style-type: none;
+    padding: 0 2vw;
+    margin: 0;
+    display: flex;
+}
+nav ul li a {
+    font-size: 1.1rem;
+    text-decoration: none;
+    color: #fff2f2;
+    font-weight: 600;
+    display: block;
+    padding: .65rem 2rem;
+}
+nav li.active a {
+    background-color: #fff2f2;
+    background-image: linear-gradient(to bottom, #fff2f2, #FFE0B7);
+    color: #cb99c8;
+}
+nav a:hover {
+    color: #fff;
+}
+    
+} /*end of the media query*/
+
+/*main stuff here*/
+main {
+    padding: 1rem 2vw;
+}
+
+main a:hover {
+    color: #cb99c8;
+}
+
+main h1 {
+    color: #a589c4;
+}
+
+main h2 {
+    color: #cb99c8;
+    margin-bottom: .2rem;
+}
+
+main p {
+    color: #ffb54b;
+    margin: 0 0 .3rem 0;
+}
+main a {
+    color: #ffb54b;
+}
+
+main dl{
+    padding: .5rem 3vw;
+    background-color: #fff5fc;
+}
+main dl dt {
+    color: #ffb54b;
+    font-weight: 600;
+}
+main dl dd {
+    color: #ffcc76;
+    font-size: .9rem;
+}
+
+main ul {
+    list-style: circle;
+    padding: .5rem 3vw;
+    width: 12.5rem; 
+    background-color: #fff5fc;
+    border: 1px solid #cb99c8;
+    border-radius: 2px;
+}
+main ul li {
+    color: #ffcc76;
+    line-height: 125%;
+    margin-bottom: .5rem;
+    font-size: .9rem;
+}
+
+main ol {
+    padding: .5rem 3vw;
+    width: 12.5rem; 
+    background-color: #fff5fc;
+    border: 1px solid #cb99c8;
+    border-radius: 2px;
+}
+main ol li {
+    color: #ffcc76;
+}
+
+.maphero {
+    width: 100%;
+    margin: 0;
+}
+
+.maphero img {
+    width: 100%;
+    height: auto;
+}
+
+/*main figure things*/
+
+figure.wrapped {
+    width: 30%;
+    margin: 0 0 2% 2%;
+    float: right; 
+}
+figure.wrapped img {
+    width: 100%;
+    height: auto;
+}
+figure.wrapped figcaption {
+    text-align:center;
+    font-size: .75rem;
+    color: #a589c4;
+}
+
+div.gallery {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+div.gallery figure {
+    margin: 0.5rem 2% 0 0;
+}
+
+div.gallery figcaption {
+    text-align: center;
+    font-size: .8rem;
+    color: #a589c4;
+}
+
+.gallery img:hover {
+    width: 100%;
+    height: auto;
+    box-shadow: 4px 4px 10px black;
+    
+}
+
+table.creationtable {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table.creationtable th {
+    background-color: #cb99c8;
+    color: #FFE0B7;
+    padding: .4rem 2vw;
+    text-align: left;
+}
+
+table.creationtable td {
+    color: #ffb54b;
+    padding: .4rem 2vw;
+}
+
+table.creationtable tr:nth-child(odd) {
+    background-color: #fff2f2;
+}
+
+table.creationtable tr:hover {
+    background-color: rgba(165,137,196,.2)
+}
+
+
+/*main form things*/
+
+.reviewForm fieldset {
+    border: 1px solid #cb99c8;
+    border-radius: 3px;
+    margin-bottom: 1rem; 
+}
+
+.reviewForm legend {
+    color: #cb99c8;
+    font-size: .8rem;
+}
+
+.reviewForm {
+    margin: .5rem;
+}
+
+.reviewForm label, .reviewForm select, .reviewForm [type=text], .reviewForm textarea {
+    display: block;
+}
+
+.reviewForm [type=text], .reviewForm textarea, .reviewForm select {
+    border: solid 1px #888;
+    padding: .3rem;
+    width: 250px;
+    border-radius: .3rem;
+    font-weight: 200;
+}
+
+.reviewForm textarea {
+    height: 10rem;
+}
+
+.reviewForm [type=submit] {
+    background-color: #a589c4;
+    border: none;
+    padding: 1rem 2rem;
+    border-radius: 10px;
+    color: white;
+    margin: 1rem 0 0 1vw;
+}
+
+
+.notificationForm fieldset {
+    border: 1px solid #cb99c8;
+    border-radius: 3px;
+    margin-bottom: 1rem; 
+}
+
+.notificationForm legend {
+    color: #cb99c8;
+    font-size: .8rem;
+}
+
+.notificationForm {
+    margin: .5rem;
+}
+
+.notificationForm label, .notificationForm select, .notificationForm [type=text], .notificationForm [type=tel], .notificationForm [type=email] {
+    display: block;
+}
+
+.notificationForm [type=text], .notificationForm [type=tel], .notificationForm [type=email], .notificationForm select {
+    border: solid 1px #888;
+    padding: .3rem;
+    width: 250px;
+    border-radius: .3rem;
+    font-weight: 200;
+}
+
+.notificationForm [type=submit] {
+   background-color: #a589c4;
+    border: none;
+    padding: 1rem 2rem;
+    border-radius: 10px;
+    color: white;
+    margin: 1rem 0 0 1vw;
+}
+
+
+/*footer stuff here*/
+footer {
+    background-color: #ffdaba;
+    text-align: center;
+    color: #a589c4;
+    padding: .5rem 0;
+    font-size: .8rem;
+}
+footer a {
+    color: #a589c4;
+}
+
+
+header, nav, main, footer, form {
+    max-width: 64rem;
+    margin: 0 auto;
+}
+
+
+
+
+
